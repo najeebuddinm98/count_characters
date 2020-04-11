@@ -1,10 +1,9 @@
-#count number of each alphabet in any entered data
+#count number of each characterter in the entered data
 
 def alphabetCount(recmes): #recmes=received message
     count={}
     for character in recmes.lower():
         count.setdefault(character,0) #create key for character not present already in dictionary and set value as 0
-        
         count[character]+=1
     return count
 
